@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+<h1>Sign Up</h1>
+<div class="container">
+    @{Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("User Name")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("Name")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Email Id")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("EmailId")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Password")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("Password")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            
+        </div>
+        <div class="col-lg-3">
+            <input type="Submit" value="Save" class="btn btn-success"/>
+        </div>
+    </div>
+    @{Html.EndForm();}
+ </div>
+
+
